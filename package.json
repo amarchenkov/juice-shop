@@ -3,22 +3,7 @@
   "version": "15.2.1",
   "private": true,
   "description": "Probably the most modern and sophisticated insecure web application",
-  "keywords": [
-    "web security",
-    "web application security",
-    "webappsec",
-    "owasp",
-    "pentest",
-    "pentesting",
-    "security",
-    "vulnerable",
-    "vulnerability",
-    "broken",
-    "bodgeit",
-    "ctf",
-    "capture the flag",
-    "awareness"
-  ],
+  "keywords": [ "web security", "web application security", "webappsec", "owasp", "pentest", "pentesting", "security", "vulnerable", "vulnerability", "broken", "bodgeit", "ctf", "capture the flag", "awareness" ],
   "homepage": "https://owasp-juice.shop",
   "bugs": {
     "url": "https://github.com/juice-shop/juice-shop/issues"
@@ -29,24 +14,7 @@
   },
   "license": "MIT",
   "author": "Björn Kimminich <bjoern.kimminich@owasp.org> (https://kimminich.de)",
-  "contributors": [
-    "Björn Kimminich",
-    "Jannik Hollenbach",
-    "Aashish683",
-    "greenkeeper[bot]",
-    "MarcRler",
-    "agrawalarpit14",
-    "Scar26",
-    "ShubhamPalriwala",
-    "CaptainFreak",
-    "JuiceShopBot",
-    "Supratik Das",
-    "the-pro",
-    "Ziyang Li",
-    "Timo Pagel",
-    "aaryan10",
-    "..."
-  ],
+  "contributors": [ "Björn Kimminich", "Jannik Hollenbach", "Aashish683", "greenkeeper[bot]", "MarcRler", "agrawalarpit14", "Scar26", "ShubhamPalriwala", "CaptainFreak", "JuiceShopBot", "Supratik Das", "the-pro", "Ziyang Li", "Timo Pagel", "aaryan10", "..." ],
   "scripts": {
     "build:frontend": "cd frontend && node ./node_modules/@angular/cli/bin/ng build --aot --configuration production --output-hashing=none --vendor-chunk=true --source-map=false",
     "build:server": "tsc",
@@ -82,34 +50,17 @@
     },
     "globalSetup": "./test/apiTestsSetup.ts",
     "globalTeardown": "./test/apiTestsTeardown.ts",
-    "modulePathIgnorePatterns": [
-      "/build"
-    ],
-    "setupFilesAfterEnv": [
-      "./test/apiTestsSetupJest.ts"
-    ],
-    "testMatch": [
-      "<rootDir>/test/api/*Spec.[jt]s"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/frontend/node_modules/"
-    ],
+    "modulePathIgnorePatterns": [ "/build" ],
+    "setupFilesAfterEnv": [ "./test/apiTestsSetupJest.ts" ],
+    "testMatch": [ "<rootDir>/test/api/*Spec.[jt]s" ],
+    "testPathIgnorePatterns": [ "/node_modules/", "/frontend/node_modules/" ],
     "testURL": "http://localhost"
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
     "all": true,
-    "include": [
-      "lib/*.ts",
-      "models/*.ts",
-      "routes/*.ts",
-      "server.ts"
-    ],
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ]
+    "include": [ "lib/*.ts", "models/*.ts", "routes/*.ts", "server.ts" ],
+    "reporter": [ "lcov", "text-summary" ]
   },
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -263,24 +214,10 @@
   "engines": {
     "node": "16 - 20"
   },
-  "os": [
-    "win32",
-    "linux",
-    "darwin",
-    "freebsd",
-    "openbsd"
-  ],
-  "cpu": [
-    "x64",
-    "x32",
-    "arm64",
-    "arm"
-  ],
+  "os": [ "win32", "linux", "darwin", "freebsd", "openbsd" ],
+  "cpu": [ "x64", "x32", "arm64", "arm" ],
   "heroku-run-build-script": true,
   "standard": {
-    "global": [
-      "angular",
-      "inject"
-    ]
+    "global": [ "angular", "inject" ]
   }
 }
